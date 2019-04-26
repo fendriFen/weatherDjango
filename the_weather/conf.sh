@@ -11,7 +11,6 @@ sudo ufw allow ssh
 sudo ufw allow 8000
 yes | sudo ufw enable
 sudo ufw status
-git clone https://github.com/fendriFen/weatherDjango.git
 sudo apt-get -y install python3-pip
 sudo apt-get -y install python3-venv
 cd weatherDjango
