@@ -16,7 +16,8 @@ sudo apt-get -y install python3-pip
 sudo apt-get -y install python3-venv
 cd weatherDjango
 ls
-python3 -m venv venv && source venv/bin/activate
+python3 -m venv venv 
+source venv/bin/activate
 cd ./the_weather
 sudo apt-get install mysql-server 
 pip3 install -r requirements.txt
@@ -30,7 +31,8 @@ sudo sed -i "s/\'/+/g" /etc/config.json
 sudo sed -i "s/+/\"/g" /etc/config.json
 sudo sed -i 's/^/\t\"SECRET_KEY: /' /etc/config.json
 sudo sed -i 's/^/\{\n /' /etc/config.json
-sudo chown ubuntu /etc/config.json && echo "}" >> /etc/config.json
+sudo chown ubuntu /etc/config.json
+echo "}" >> /etc/config.json
 sed -i "s/import os/import os \nimport json \nwith open (\'\/etc\/config.json\') as config_file: \n\tconfig = json.load\(config_file\) /g" weatherDjango/the_weather/the_weather/settings.py
 sed -i 's/=.*/ = config\['SECRET_KEY'\] /' weatherDjango/the_weather/the_weather/settings.py
 cd weatherDjango/the_weather/
