@@ -26,7 +26,7 @@ echo "--------------------"
 echo "____________________"
 cd ./the_weather
 pwd
-sudo sed -i 's/DEBUG = True/DEBUG = False/' settings.py
+#sudo sed -i 's/DEBUG = True/DEBUG = False/' settings.py
 echo "false ---> true done"
 echo "____________________"
 x=\"
