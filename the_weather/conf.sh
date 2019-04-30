@@ -52,4 +52,4 @@ sudo sed -i "s/SECRET_KEY =.*/SECRET_KEY = config\['SECRET_KEY'\] /" settings.py
 pwd
 cd ~/weatherDjango/the_weather/
 echo "done"
-source venv/bin/activate | python3 manage.py runserver 0.0.0.0:8000 &
+source venv/bin/activate | python3 manage.py runserver 0.0.0.0:8000 & ;
