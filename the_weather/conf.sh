@@ -53,6 +53,6 @@ pwd
 cd ~/weatherDjango/the_weather/
 echo "done"
 #source venv/bin/activate | echo | 
-commande='python3 manage.py runserver 0.0.0.0:8000' 
-$commande &
+python3 manage.py runserver 0.0.0.0:8000 &>/dev/null 
+
 
