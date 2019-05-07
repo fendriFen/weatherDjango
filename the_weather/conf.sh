@@ -55,6 +55,7 @@ echo "done"
 #source venv/bin/activate | echo | 
 python3 manage.py runserver 0.0.0.0:8000 &>/dev/null
 sleep 5
+sleep 5
 exit 0
 
 
